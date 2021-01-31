@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<category><pattern>*</pattern>
+<template>SORRY, I am not able to understand</template>
+</category>
+<category><pattern>HELLO</pattern>
+<template>
+<random>
+<li>Hello, human</li>
+<li> Hello! </li>
+<li> Hi! Nice to meet you! </li>
+</random>
+</template>
+</category>
+<category><pattern>HELLO *</pattern>
+<template>
+<random>
+<li>Hello, human</li>
+<li> Hello! </li>
+<li> Hi! Nice to meet you! </li>
+</random>
+</template>
+</category>
+<category><pattern>WHO ARE YOU</pattern>
+<template>I AM ROBOT</template>
+</category>
+<category><pattern>WHO AM I</pattern>
+<template>I AM NOT SURE, SEEMS TO BE A HUMAN</template>
+</category>
+<category><pattern>WHAT YEAR IS THIS</pattern>
+<template><date format="%Y"/>.</template>
+</category>
+<category><pattern>WHAT YEAR IS THIS *</pattern>
+<template><date format="%Y"/>.</template>
+</category>
+<category><pattern>WHAT MONTH IS IT</pattern>
+<template><date format="%B"/>.</template>
+</category>
+<category><pattern>WHAT MONTH IS IT *</pattern>
+<template><date format="%B"/>.</template>
+</category>
+<category><pattern>IS TODAY *</pattern>
+<template>Today is <date format="%A"/>.</template>
+</category>
+<category><pattern>TODAY IS</pattern>
+<template>Today is <date format="%A"/>.</template>
+</category>
+<category><pattern>TODAY IS *</pattern>
+<template>Today is <date format="%A"/>.</template>
+</category>
+<category><pattern>TELL ME ABOUT *</pattern>
+<template>
+Here is some information about <star/>
+<button>
+<text>Click here</text>
+<url>https://en.wikipedia.org/wiki/<star/></url>
+</button>
+</template>
+</category>
+<category><pattern>SHOW ME A MAP OF *</pattern>
+<template>
+Here is a map of <star/>
+<button>
+<text>Click here</text>
+<url>https://www.google.com/maps?q=<star/></url>
+</button>
+</template>
+</category>
+<category><pattern>WHAT IS THE WEATHER IN *</pattern>
+<template>
+I hope it's a nice day in <star/>
+<button>
+<text>Click here for the forecast</text>
+<url>https://www.weather-forecast.com/locations/<star/>/forecasts/latest</url>
+</button>
+</template>
+</category>
+<category><pattern>Bye</pattern>
+<template>
+<random>
+<li>Bye, human</li>
+<li> Bye! </li>
+</random>
+</template>
+</category>
+<category><pattern>Bye *</pattern>
+<template>
+<random>
+<li>Bye, human</li>
+<li> Bye! </li>
+</random>
+</template>
+</category>
+</aiml>
